@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rota — Plataforma de gestao operacional para transportadoras e operadores logisticos. Visibilidade total da sua operacao, do armazem a ultima milha." />
+  <title>Rota — Tecnologia para operacoes logisticas</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <div class="logo-mark">
+          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M2 7h10M7 2l5 5-5 5"/>
+          </svg>
+        </div>
+        Rota
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#beneficios">Solucao</a></li>
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#clientes">Clientes</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+          <svg class="icon-moon" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M7.5 1a6.5 6.5 0 1 0 6.5 6.5A5 5 0 0 1 7.5 1z"/>
+          </svg>
+          <svg class="icon-sun" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="7.5" cy="7.5" r="3"/>
+            <path d="M7.5 1v2M7.5 12v2M1 7.5h2M12 7.5h2M3.1 3.1l1.4 1.4M10.5 10.5l1.4 1.4M3.1 11.9l1.4-1.4M10.5 4.5l1.4-1.4"/>
+          </svg>
+        </button>
+        <a href="#contato" class="btn-cta btn-cta-nav">Falar com especialista</a>
+        <button id="menu-btn" class="menu-btn" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-nav" class="mobile-nav">
+      <a href="#beneficios">Solucao</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#clientes">Clientes</a>
+      <a href="#contato">Falar com especialista</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-grid-bg"></div>
+      <div class="hero-glow"></div>
+
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-content">
+            <div class="hero-eyebrow">Plataforma de gestao operacional</div>
+            <h1>
+              Controle total
+              <span class="highlight">de ponta a ponta.</span>
+            </h1>
+            <p class="hero-sub">
+              Unifique rastreamento, roteirizacao e KPIs operacionais em uma unica plataforma. Menos excecao manual, mais previsibilidade na sua operacao logistica.
+            </p>
+            <div class="hero-cta-group">
+              <a href="#contato" class="btn-cta large">
+                Falar com um especialista
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                  <path d="M1 7h12M7 1l6 6-6 6"/>
+                </svg>
+              </a>
+              <a href="#como-funciona" class="btn-outline">Ver como funciona</a>
+            </div>
+            <div class="hero-trust">
+              <div class="trust-avatars">
+                <div class="trust-avatar">RM</div>
+                <div class="trust-avatar">FA</div>
+                <div class="trust-avatar">CL</div>
+                <div class="trust-avatar">PB</div>
+              </div>
+              <div class="trust-text">
+                <strong>+340 operacoes ativas</strong><br>
+                confiam na Rota hoje
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="ops-panel">
+              <div class="ops-header">
+                <span class="ops-header-title">Painel operacional — ao vivo</span>
+                <span class="ops-live">Operacional</span>
+              </div>
+              <div class="ops-body">
+                <div class="ops-kpis">
+                  <div class="kpi-box">
+                    <div class="kpi-lbl">Entregas hoje</div>
+                    <div class="kpi-val ok">1.847</div>
+                  </div>
+                  <div class="kpi-box">
+                    <div class="kpi-lbl">SLA atual</div>
+                    <div class="kpi-val">98,3%</div>
+                  </div>
+                  <div class="kpi-box">
+                    <div class="kpi-lbl">Ocorrencias</div>
+                    <div class="kpi-val ac">12</div>
+                  </div>
+                </div>
+
+                <div class="ops-chart-wrap">
+                  <div class="ops-chart-lbl">Volumetria — ultimos 8 dias</div>
+                  <div class="chart-bars">
+                    <div class="cb"></div>
+                    <div class="cb"></div>
+                    <div class="cb"></div>
+                    <div class="cb on"></div>
+                    <div class="cb"></div>
+                    <div class="cb on"></div>
+                    <div class="cb"></div>
+                    <div class="cb on"></div>
+                  </div>
+                </div>
+
+                <div class="ops-routes">
+                  <div class="rt-row">
+                    <span class="rt-id">RTA-042</span>
+                    <div class="rt-track"><div class="rt-fill" style="width:92%;animation-delay:.1s"></div></div>
+                    <span class="rt-pct">92%</span>
+                  </div>
+                  <div class="rt-row">
+                    <span class="rt-id">RTA-057</span>
+                    <div class="rt-track"><div class="rt-fill" style="width:78%;animation-delay:.25s"></div></div>
+                    <span class="rt-pct">78%</span>
+                  </div>
+                  <div class="rt-row">
+                    <span class="rt-id">RTA-063</span>
+                    <div class="rt-track"><div class="rt-fill" style="width:61%;animation-delay:.4s"></div></div>
+                    <span class="rt-pct">61%</span>
+                  </div>
+                  <div class="rt-row">
+                    <span class="rt-id">RTA-081</span>
+                    <div class="rt-track"><div class="rt-fill" style="width:45%;animation-delay:.55s"></div></div>
+                    <span class="rt-pct">45%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOGOS -->
+    <div class="logos-band">
+      <div class="container">
+        <p class="logos-label">Operadores logisticos e transportadoras que usam a Rota</p>
+        <div class="logos-row">
+          <span class="logo-co">Tegma</span>
+          <span class="logo-co">JSL Logistica</span>
+          <span class="logo-co">Rapidao Cometa</span>
+          <span class="logo-co">Braspress</span>
+          <span class="logo-co">Sequoia</span>
+          <span class="logo-co">Grupo Comporte</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- BENEFITS -->
+    <section id="beneficios" class="section">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-eyebrow">Por que a Rota</p>
+          <h2 class="section-title">Visibilidade que<br>transforma operacoes</h2>
+          <p class="section-body">Pare de gerenciar sua logistica por planilha e WhatsApp. A Rota centraliza o que importa e elimina o retrabalho.</p>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-cell reveal" data-delay="0">
+            <div class="benefit-num">01</div>
+            <div class="benefit-rule"></div>
+            <h3>Rastreamento unificado</h3>
+            <p>Todas as transportadoras e modalidades em um unico painel. Sem logins multiplos, sem dados desatualizados.</p>
+          </div>
+          <div class="benefit-cell reveal" data-delay="80">
+            <div class="benefit-num">02</div>
+            <div class="benefit-rule"></div>
+            <h3>Torre de controle</h3>
+            <p>Identifique desvios de rota, atrasos e ocorrencias em tempo real antes que o cliente reclame.</p>
+          </div>
+          <div class="benefit-cell reveal" data-delay="160">
+            <div class="benefit-num">03</div>
+            <div class="benefit-rule"></div>
+            <h3>SLA automatizado</h3>
+            <p>Configure niveis de servico por cliente, produto ou regiao. Alertas automaticos quando o prazo estiver em risco.</p>
+          </div>
+          <div class="benefit-cell reveal" data-delay="240">
+            <div class="benefit-num">04</div>
+            <div class="benefit-rule"></div>
+            <h3>Analytics operacional</h3>
+            <p>Dashboards de produtividade, custo por entrega e desempenho de transportadoras. Dados para decidir, nao apenas relatar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="como-funciona" class="section section-alt">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-eyebrow">Como funciona</p>
+          <h2 class="section-title">Da integracao ao<br>controle em 3 etapas</h2>
+          <p class="section-body">Implantacao assistida pelo nosso time de especialistas em logistica. Nao e um software generico.</p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-item reveal" data-delay="0">
+            <div class="step-num">01</div>
+            <h3>Mapeamento da operacao</h3>
+            <p>Nosso time entende seus fluxos, transportadoras, clientes e SLAs. Configuramos a plataforma para a sua realidade, nao o contrario.</p>
+          </div>
+          <div class="step-item reveal" data-delay="100">
+            <div class="step-num">02</div>
+            <h3>Integracao com suas fontes</h3>
+            <p>Conectamos seu TMS, ERP e transportadoras via API ou arquivos. Mais de 80 integradores nativas com as principais plataformas do mercado.</p>
+          </div>
+          <div class="step-item reveal" data-delay="200">
+            <div class="step-num">03</div>
+            <h3>Operacao ao vivo</h3>
+            <p>Em ate 15 dias sua equipe ja opera com visibilidade completa. Treinamento incluido, suporte dedicado em portugues.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <div class="stats-band">
+      <div class="container">
+        <div class="stats-inner">
+          <div class="stat-cell">
+            <div class="stat-num" data-count="340" data-suffix="+">0</div>
+            <div class="stat-desc">Operacoes ativas</div>
+          </div>
+          <div class="stat-cell">
+            <div class="stat-num" data-count="98" data-suffix="%">0</div>
+            <div class="stat-desc">SLA medio dos clientes</div>
+          </div>
+          <div class="stat-cell">
+            <div class="stat-num" data-count="2.1" data-suffix="M+">0</div>
+            <div class="stat-desc">Entregas monitoradas/mes</div>
+          </div>
+          <div class="stat-cell">
+            <div class="stat-num" data-count="15" data-suffix=" dias">0</div>
+            <div class="stat-desc">Para entrar em operacao</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TESTIMONIALS -->
+    <section id="clientes" class="section">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-eyebrow">Clientes</p>
+          <h2 class="section-title">Quem opera com a Rota</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="tcard reveal" data-delay="0">
+            <div class="tcard-quote">"</div>
+            <p class="tcard-text">Antes da Rota, nossa equipe passava horas ligando para transportadoras para saber o status de cargas criticas. Hoje temos visibilidade em tempo real de toda a operacao e reduzimos o numero de ocorrencias em 40%.</p>
+            <div class="tcard-author">
+              <div class="tcard-initial">RM</div>
+              <div>
+                <div class="tcard-name">Ricardo Marques</div>
+                <div class="tcard-role">Diretor de Operacoes — Grupo Tegma</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="tcard reveal" data-delay="100">
+            <div class="tcard-quote">"</div>
+            <p class="tcard-text">A implantacao foi surpreendentemente rapida. O time da Rota conhece logistica de verdade — nao ficamos explicando nosso negocio para um consultor de TI. Em tres semanas ja estavamos com o painel rodando para todos os clientes.</p>
+            <div class="tcard-author">
+              <div class="tcard-initial">FA</div>
+              <div>
+                <div class="tcard-name">Fernanda Alves</div>
+                <div class="tcard-role">Gerente de Tecnologia — Braspress</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="tcard reveal" data-delay="200">
+            <div class="tcard-quote">"</div>
+            <p class="tcard-text">Conseguimos negociar melhores tarifas com transportadoras usando os dados de desempenho da plataforma. O ROI veio muito antes do esperado — e o suporte pos-implantacao e diferenciado.</p>
+            <div class="tcard-author">
+              <div class="tcard-initial">CL</div>
+              <div>
+                <div class="tcard-name">Carlos Libanio</div>
+                <div class="tcard-role">Head de Logistica — Sequoia</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORM -->
+    <section id="contato" class="form-section section-alt">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-eyebrow">Fale com um especialista</p>
+          <h2 class="section-title">Sua operacao merece<br>uma analise real.</h2>
+          <p class="section-body">Nenhum script de vendas. Um especialista em logistica vai entender sua operacao e mostrar como a Rota se encaixa.</p>
+        </div>
+
+        <div class="form-layout">
+          <div class="form-left reveal" data-delay="0">
+            <p class="section-body" style="max-width:400px;margin-bottom:0">
+              Preencha o formulario e nosso time entra em contato em ate 24 horas uteis para agendar uma conversa sem compromisso.
+            </p>
+            <div class="form-promise">
+              <div class="promise-item">
+                <div class="promise-marker"></div>
+                <div class="promise-text">
+                  <strong>Sem demo generica</strong>
+                  <span>Preparamos a apresentacao com base na sua operacao especifica.</span>
+                </div>
+              </div>
+              <div class="promise-item">
+                <div class="promise-marker"></div>
+                <div class="promise-text">
+                  <strong>Especialista em logistica</strong>
+                  <span>Voce fala com quem entende de roteirizacao, SLA e TMS, nao so de software.</span>
+                </div>
+              </div>
+              <div class="promise-item">
+                <div class="promise-marker"></div>
+                <div class="promise-text">
+                  <strong>Sem pressao comercial</strong>
+                  <span>Nossa cultura e consultiva. Se a Rota nao for a solucao certa, vamos dizer isso.</span>
+                </div>
+              </div>
+              <div class="promise-item">
+                <div class="promise-marker"></div>
+                <div class="promise-text">
+                  <strong>Retorno em 24h</strong>
+                  <span>Respondemos em ate um dia util, horario comercial, em portugues.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-right reveal" data-delay="120">
+            <div class="form-card">
+              <h3 class="form-card-title">Agende uma conversa</h3>
+              <p class="form-card-sub">Sem obrigatoriedade. Sem contrato para assinar.</p>
+
+              <form id="lead-form" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="name">Nome</label>
+                    <input class="form-input" type="text" id="name" name="name" placeholder="Seu nome" required autocomplete="given-name" />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="sobrenome">Sobrenome</label>
+                    <input class="form-input" type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" autocomplete="family-name" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="email">E-mail corporativo</label>
+                  <input class="form-input" type="email" id="email" name="email" placeholder="voce@empresa.com.br" required autocomplete="email" />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="empresa">Empresa</label>
+                  <input class="form-input" type="text" id="empresa" name="empresa" placeholder="Nome da transportadora ou operador" required autocomplete="organization" />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="volume">Volume mensal aproximado</label>
+                  <select class="form-select" id="volume" name="volume">
+                    <option value="" disabled selected>Selecione uma faixa</option>
+                    <option value="ate5k">Ate 5.000 entregas/mes</option>
+                    <option value="5k-20k">5.000 a 20.000 entregas/mes</option>
+                    <option value="20k-100k">20.000 a 100.000 entregas/mes</option>
+                    <option value="100k+">Acima de 100.000 entregas/mes</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="desafio">Principal desafio hoje</label>
+                  <select class="form-select" id="desafio" name="desafio">
+                    <option value="" disabled selected>Selecione o maior problema</option>
+                    <option value="rastreamento">Rastreamento e visibilidade de cargas</option>
+                    <option value="sla">Gestao de SLA e prazos</option>
+                    <option value="ocorrencias">Tratamento de ocorrencias</option>
+                    <option value="kpis">Indicadores e relatorios operacionais</option>
+                    <option value="integracao">Integracao entre sistemas</option>
+                  </select>
+                </div>
+
+                <button type="submit" class="form-submit">
+                  Quero falar com um especialista
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <path d="M1 7h12M7 1l6 6-6 6"/>
+                  </svg>
+                </button>
+
+                <p class="form-note">Ao enviar, voce concorda com nossa <a href="#" style="color:var(--accent)">Politica de Privacidade</a>. Nenhum dado e compartilhado com terceiros.</p>
+              </form>
+
+              <div id="form-success">
+                <div class="success-ring">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <path d="M5 12l5 5L20 7"/>
+                  </svg>
+                </div>
+                <h3>Solicitacao recebida</h3>
+                <p>Nosso especialista em logistica vai entrar em contato em ate 24 horas uteis para agendar a conversa.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#" class="nav-logo">
+            <div class="logo-mark">
+              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <path d="M2 7h10M7 2l5 5-5 5"/>
+              </svg>
+            </div>
+            Rota
+          </a>
+          <p class="footer-brand-desc">Plataforma de gestao operacional para transportadoras e operadores logisticos.</p>
+        </div>
+
+        <nav class="footer-col" aria-label="Produto">
+          <h4>Produto</h4>
+          <ul>
+            <li><a href="#">Torre de controle</a></li>
+            <li><a href="#">Rastreamento</a></li>
+            <li><a href="#">Gestao de SLA</a></li>
+            <li><a href="#">Integrações</a></li>
+            <li><a href="#">API</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Empresa">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#">Sobre nos</a></li>
+            <li><a href="#">Casos de uso</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Carreiras</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Suporte">
+          <h4>Suporte</h4>
+          <ul>
+            <li><a href="#">Central de ajuda</a></li>
+            <li><a href="#">Status</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">LGPD</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <span>2025 Rota Tecnologia Ltda. Todos os direitos reservados.</span>
+        <div style="display:flex;gap:20px">
+          <a href="#">Privacidade</a>
+          <a href="#">Termos de uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
